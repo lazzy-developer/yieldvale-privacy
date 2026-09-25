@@ -26,7 +26,8 @@ scan), the app sends only what that feature needs (an approximate location,
 or one leaf photo), uses it to answer, and does not keep it linked to you.</p>
 
 <h2>What stays only on your phone</h2>
-<p>Field names, crops, sowing dates, walked field boundaries, expenses and
+<p>Field names, crops, sowing dates, field boundaries (walked or drawn on the map),
+field plans and water outlets you mark, expenses and
 observation notes are stored in a database on your device. They are never
 uploaded. We have no copy. Uninstalling the app deletes them.</p>
 
@@ -35,7 +36,7 @@ uploaded. We have no copy. Uninstalling the app deletes them.</p>
   <tr><th>Data</th><th>When</th><th>Why</th><th>Kept?</th></tr>
   <tr>
     <td>Approximate location (rounded on your phone to a grid of about 2 km)</td>
-    <td>When you open Sowing Decision, Weather, Disease Scan, or turn on the map's wind or cyclone layers</td>
+    <td>When you open Sowing Decision, Weather, Disease Scan or Mandi prices, turn on the map's wind or cyclone layers, or open the Field Planner (to look up the usual wind)</td>
     <td>To give the weather, sowing advice and cyclone distance for your area</td>
     <td>Not stored in our database. Our hosting provider's request logs, which include
         the rounded location and your IP address, are kept for troubleshooting for no
@@ -49,6 +50,12 @@ uploaded. We have no copy. Uninstalling the app deletes them.</p>
         add one anonymous count to your district's outbreak tally (district, disease
         name, confidence, time). Nothing else, and nothing that identifies you or your
         phone.</td>
+  </tr>
+  <tr>
+    <td>A price you report (crop, price per quintal, where you sold, date)</td>
+    <td>Only when you tap "I sold at..." in Mandi prices</td>
+    <td>To show farmers in your district what others were paid, as a median</td>
+    <td>Kept with your district only (worked out from your rounded location). No name, phone number or device identifier is stored, so a report cannot be traced back to you.</td>
   </tr>
   <tr>
     <td>Crop and acreage you type</td>
@@ -65,7 +72,7 @@ uploaded. We have no copy. Uninstalling the app deletes them.</p>
       OpenStreetMap, Esri (satellite view) and NASA (cloud and rain layers). These
       services see your IP address and which part of the map you are viewing,
       under their own privacy policies.</li>
-  <li><strong>Our server</strong> gets weather from Open-Meteo, cyclone data from
+  <li><strong>Our server</strong> gets mandi prices from the government's AGMARKNET data on data.gov.in, weather from Open-Meteo, cyclone data from
       GDACS (United Nations / European Commission) and satellite image times from
       NASA, sending them only the rounded location, never anything that identifies
       you.</li>
