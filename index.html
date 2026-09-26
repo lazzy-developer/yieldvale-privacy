@@ -17,13 +17,15 @@
 <body>
 
 <h1>Yieldvale Privacy Policy</h1>
-<p class="updated">Effective 25 September 2026 · App package: com.yieldvale.app</p>
+<p class="updated">Effective 26 September 2026 · App package: com.yieldvale.app</p>
 
 <p><strong>In short:</strong> Yieldvale has no accounts, no ads and no analytics.
 Your fields, expenses and notes stay on your phone. When you use a feature
 that needs our server (the sowing decision, weather, map layers or disease
 scan), the app sends only what that feature needs (an approximate location,
-or one leaf photo), uses it to answer, and does not keep it linked to you.</p>
+or one leaf photo), uses it to answer, and does not keep it linked to you.
+The one exception is a Yieldvale sensor, if you own one: its readings are kept
+against the sensor's ID (see below).</p>
 
 <h2>What stays only on your phone</h2>
 <p>Field names, crops, sowing dates, field boundaries (walked or drawn on the map),
@@ -45,7 +47,7 @@ uploaded. We have no copy. Uninstalling the app deletes them.</p>
   <tr>
     <td>A leaf photo</td>
     <td>Only when you scan a leaf and this build has no on-phone disease model</td>
-    <td>To identify the likely disease</td>
+    <td>To identify the likely disease and, if you did not choose the crop, which crop it is</td>
     <td>The photo is analysed in memory and discarded. If the result is confident, we
         add one anonymous count to your district's outbreak tally (district, disease
         name, confidence, time). Nothing else, and nothing that identifies you or your
@@ -56,6 +58,16 @@ uploaded. We have no copy. Uninstalling the app deletes them.</p>
     <td>Only when you tap "I sold at..." in Mandi prices</td>
     <td>To show farmers in your district what others were paid, as a median</td>
     <td>Kept with your district only (worked out from your rounded location). No name, phone number or device identifier is stored, so a report cannot be traced back to you.</td>
+  </tr>
+  <tr>
+    <td>Your Yieldvale sensor's ID, and the readings the sensor sends (soil moisture,
+        temperature, humidity, battery)</td>
+    <td>The app sends the ID when you enter it on the Sensor / Device screen and with
+        Sowing Decision. The sensor sends its readings by itself.</td>
+    <td>To show your sensor's readings and use them in your sowing advice</td>
+    <td>Readings are stored against the sensor's ID, with no name or phone number. Anyone
+        who has the ID can see the readings (never the location), so keep the ID to
+        yourself. Email us the ID to have its readings deleted.</td>
   </tr>
   <tr>
     <td>Crop and acreage you type</td>
@@ -97,8 +109,9 @@ tracking across other apps or websites.</p>
 
 <h2>Your choices and deletion</h2>
 <p>Everything personal lives on your phone, so uninstalling the app deletes it.
-We keep nothing linked to you on our server. If you have a question or want us
-to confirm anything about your data, email us at the address below.</p>
+The only thing we keep that is linked to something of yours is a sensor's
+readings, linked to the sensor's ID; email us the ID and we delete them within
+30 days. For any other question about your data, email us at the address below.</p>
 
 <h2>Changes to this policy</h2>
 <p>If the app starts handling data differently, this page will be updated before
